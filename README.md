@@ -1,1 +1,1 @@
-# SCC
+# Smartcoin Crypto Currency
