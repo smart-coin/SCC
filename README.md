@@ -1,1 +1,1 @@
-# Smartcoin Crypto Currency
+# Smartcoin Crypto Currency!
