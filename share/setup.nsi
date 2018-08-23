@@ -7,14 +7,14 @@ SetCompressor /SOLID lzma
 !define REGKEY "SOFTWARE\$(^Name)"
 !define VERSION 0.14.2
 !define COMPANY "SmartCoin Core project"
-!define URL https://www.smart-coin.io/
+!define URL https://smart-coin.io/
 
 # MUI Symbol Definitions
-!define MUI_ICON "/smartcoin/share/pixmaps/bitcoin.ico"
-!define MUI_WELCOMEFINISHPAGE_BITMAP "/smartcoin/share/pixmaps/nsis-wizard.bmp"
+!define MUI_ICON "/home/snoopy_kr/develop/generator/smartcoin/share/pixmaps/bitcoin.ico"
+!define MUI_WELCOMEFINISHPAGE_BITMAP "/home/snoopy_kr/develop/generator/smartcoin/share/pixmaps/nsis-wizard.bmp"
 !define MUI_HEADERIMAGE
 !define MUI_HEADERIMAGE_RIGHT
-!define MUI_HEADERIMAGE_BITMAP "/smartcoin/share/pixmaps/nsis-header.bmp"
+!define MUI_HEADERIMAGE_BITMAP "/home/snoopy_kr/develop/generator/smartcoin/share/pixmaps/nsis-header.bmp"
 !define MUI_FINISHPAGE_NOAUTOCLOSE
 !define MUI_STARTMENUPAGE_REGISTRY_ROOT HKLM
 !define MUI_STARTMENUPAGE_REGISTRY_KEY ${REGKEY}
@@ -22,7 +22,7 @@ SetCompressor /SOLID lzma
 !define MUI_STARTMENUPAGE_DEFAULTFOLDER "SmartCoin Core"
 !define MUI_FINISHPAGE_RUN $INSTDIR\smartcoin-qt
 !define MUI_UNICON "${NSISDIR}\Contrib\Graphics\Icons\modern-uninstall.ico"
-!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/smartcoin/share/pixmaps/nsis-wizard.bmp"
+!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/home/snoopy_kr/develop/generator/smartcoin/share/pixmaps/nsis-wizard.bmp"
 !define MUI_UNFINISHPAGE_NOAUTOCLOSE
 
 # Included files
@@ -48,7 +48,7 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-OutFile /smartcoin/smartcoin-${VERSION}-win-setup.exe
+OutFile /home/snoopy_kr/develop/generator/smartcoin/smartcoin-${VERSION}-win-setup.exe
 !if "" == "64"
 InstallDir $PROGRAMFILES64\SmartCoin
 !else
@@ -73,14 +73,14 @@ ShowUninstDetails show
 Section -Main SEC0000
     SetOutPath $INSTDIR
     SetOverwrite on
-    File /smartcoin/release/smartcoin-qt
-    File /oname=COPYING.txt /smartcoin/COPYING
-    File /oname=readme.txt /smartcoin/doc/README_windows.txt
+    File /home/snoopy_kr/develop/generator/smartcoin/release/smartcoin-qt
+    File /oname=COPYING.txt /home/snoopy_kr/develop/generator/smartcoin/COPYING
+    File /oname=readme.txt /home/snoopy_kr/develop/generator/smartcoin/doc/README_windows.txt
     SetOutPath $INSTDIR\daemon
-    File /smartcoin/release/smartcoind
-    File /smartcoin/release/smartcoin-cli
+    File /home/snoopy_kr/develop/generator/smartcoin/release/smartcoind
+    File /home/snoopy_kr/develop/generator/smartcoin/release/smartcoin-cli
     SetOutPath $INSTDIR\doc
-    File /r /smartcoin/doc\*.*
+    File /r /home/snoopy_kr/develop/generator/smartcoin/doc\*.*
     SetOutPath $INSTDIR
     WriteRegStr HKCU "${REGKEY}\Components" Main 1
 SectionEnd

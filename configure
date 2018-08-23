@@ -594,7 +594,7 @@ PACKAGE_TARNAME='smartcoin'
 PACKAGE_VERSION='0.14.2'
 PACKAGE_STRING='SmartCoin Core 0.14.2'
 PACKAGE_BUGREPORT='https://github.com/smart-coin/SCC/issues'
-PACKAGE_URL='https://www.smart-coin.io/'
+PACKAGE_URL='https://smart-coin.io/'
 
 ac_unique_file="src/validation.cpp"
 # Factoring default headers for most tests.
@@ -1851,7 +1851,7 @@ Use these variables to override the choices made by `configure' or to help
 it to find libraries and programs with nonstandard names/locations.
 
 Report bugs to <https://github.com/smart-coin/SCC/issues>.
-SmartCoin Core home page: <https://www.smart-coin.io/>.
+SmartCoin Core home page: <https://smart-coin.io/>.
 _ACEOF
 ac_status=$?
 fi
@@ -30909,7 +30909,7 @@ Configuration commands:
 $config_commands
 
 Report bugs to <https://github.com/smart-coin/SCC/issues>.
-SmartCoin Core home page: <https://www.smart-coin.io/>."
+SmartCoin Core home page: <https://smart-coin.io/>."
 
 _ACEOF
 cat >>$CONFIG_STATUS <<_ACEOF || ac_write_fail=1

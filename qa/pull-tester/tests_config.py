@@ -3,8 +3,8 @@
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-SRCDIR="/smartcoin"
-BUILDDIR="/smartcoin"
+SRCDIR="/home/snoopy_kr/develop/generator/smartcoin"
+BUILDDIR="/home/snoopy_kr/develop/generator/smartcoin"
 EXEEXT=""
 
 # These will turn into comments if they were disabled when configuring.

@@ -325,7 +325,7 @@
 #define PACKAGE_TARNAME "smartcoin"
 
 /* Define to the home page for this package. */
-#define PACKAGE_URL "https://www.smart-coin.io/"
+#define PACKAGE_URL "https://smart-coin.io/"
 
 /* Define to the version of this package. */
 #define PACKAGE_VERSION "0.14.2"

@@ -111,12 +111,12 @@ public:
         pchMessageStart[1] = 0xc0;
         pchMessageStart[2] = 0xb6;
         pchMessageStart[3] = 0xdb;
-        nDefaultPort = 54321;
+        nDefaultPort = 8442;
         nPruneAfterHeight = 100000;
 
-        genesis = CreateGenesisBlock(1529297870, 47909, 0x1e0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1531880622, 136896, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0xa672affaf81b38d5165fb3b7e91bfaceee42c4bc6ebcb77f65b6385dd5137bd0"));
+        assert(consensus.hashGenesisBlock == uint256S("0x1bb27baf5d5180e1bd40e3a05e559d3e137e82a0782f96694ddc0e45e0098d04"));
         assert(genesis.hashMerkleRoot == uint256S("0xc553fdc09aefbf34ec56bd1ab8ccf9452f3553257fc577af4f62185ab006cfb0"));
 
         // Note that of those with the service bits flag, most only support a subset of possible options
@@ -214,7 +214,7 @@ public:
         pchMessageStart[1] = 0xd2;
         pchMessageStart[2] = 0xc8;
         pchMessageStart[3] = 0xf1;
-        nDefaultPort = 54322;
+        nDefaultPort = 8443;
         nPruneAfterHeight = 1000;
 
         genesis = CreateGenesisBlock(1486949366, 1307331, 0x1e0ffff0, 1, 50 * COIN);
